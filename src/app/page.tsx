@@ -9,28 +9,23 @@ import {
   Link,
   Stack,
   Text,
-  IconButton,
   VStack,
   HStack,
 } from "@chakra-ui/react";
-import { Github, ExternalLink, Moon, Sun } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { Provider } from "@/components/ui/provider";
-import { useColorMode, useColorModeValue } from "@/components/ui/color-mode";
 import { Tag } from "@/components/ui/tag";
 
 const Portfolio = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  // const { colorMode, toggleColorMode } = useColorMode();
   //const { isOpen, onToggle } = useDisclosure();
 
-  const bgColor = useColorModeValue("gray.50", "gray.900");
-  const headerBg = useColorModeValue("white", "gray.800");
-  const cardBg = useColorModeValue("white", "gray.800");
-  const textColor = useColorModeValue("gray.600", "gray.300");
-  const headingColor = useColorModeValue("gray.800", "white");
-  const gradientBg = useColorModeValue(
-    "linear(to-r, blue.500, purple.600)",
-    "linear(to-r, blue.700, purple.800)"
-  );
+  const bgColor = "gray.50";
+  const headerBg = "white";
+  const cardBg = "white";
+  const textColor = "gray.600";
+  const headingColor = "gray.800";
+  const gradientBg = "linear(to-r, blue.500, purple.600)";
 
   const projects = [
     {
@@ -72,13 +67,13 @@ const Portfolio = () => {
 
             <HStack gap={4}>
               {/* カラーモード切替ボタン */}
-              <IconButton
+              {/* <IconButton
                 onClick={toggleColorMode}
                 variant="ghost"
                 aria-label="Toggle color mode"
               >
                 {colorMode === "light" ? <Moon size={20} /> : <Sun size={20} />}
-              </IconButton>
+              </IconButton> */}
 
               {/* モバイルメニューボタン */}
               {/* <IconButton
