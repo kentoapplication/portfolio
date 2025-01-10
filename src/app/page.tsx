@@ -25,7 +25,6 @@ const Portfolio = () => {
   const cardBg = "white";
   const textColor = "gray.600";
   const headingColor = "gray.800";
-  const gradientBg = "linear(to-r, blue.500, purple.600)";
 
   const projects = [
     {
@@ -133,7 +132,13 @@ const Portfolio = () => {
       {/* メインコンテンツ */}
       <Box as="main" pt={16}>
         {/* ヒーローセクション */}
-        <Box bgGradient={gradientBg} color="white" py={24}>
+        <Box
+          bgGradient="to-r"
+          gradientFrom="blue.500"
+          gradientTo="purple.600"
+          color="white"
+          py={24}
+        >
           <Container maxW="container.xl" textAlign="center">
             <Heading as="h2" size="2xl" mb={6} fontWeight="bold">
               App Developer Portfolio
