@@ -37,7 +37,7 @@ const Portfolio = () => {
       image: "/api/placeholder/400/250",
     },
     {
-      title: "プロジェクト2",
+      title: "プロジェクト",
       description:
         "別のアプリケーションの説明。ユーザーに提供する価値や解決する課題について説明します。",
       techStack: ["Flutter", "Node.js", "MongoDB"],
